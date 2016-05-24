@@ -13,8 +13,8 @@ console.log("this is the root route that goes to index and renders it");
 
 });
 
-router.get('/design', function(req, res, next) {
- res.render('design.ejs');
-});
+// router.get('/design', function(req, res, next) {
+//  res.render('design.ejs');
+// });
 
 module.exports = router;

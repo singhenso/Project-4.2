@@ -11,6 +11,9 @@ var db            = require('./config/db');
 var flash         = require('connect-flash');
 var app           = express();
 
+// Routes
+var userRoutes      = require('./routes/user');
+var designRoutes    = require('./routes/design');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -40,13 +43,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
-// Routes
-var userRoutes      = require('./routes/user');
 
 app.get('/', function(req, res, next) {
   res.render('index', { title: 'Project 3' });
 });
 app.use('/users', userRoutes);
+app.use('/design', designRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

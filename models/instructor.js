@@ -7,8 +7,7 @@ var bcrypt = require('bcrypt-nodejs');
 var instructorSchema = new mongoose.Schema({
   username   : String,
   password    : String,
-  email       : String,
-  role        : String
+  email       : String
 });
 
 instructorSchema.methods.validatePassword = function(password) {
