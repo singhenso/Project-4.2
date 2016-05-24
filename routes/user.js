@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 router.route('/')
   .get(userController.index);
 
-router.route('/design')
-  .get(userController.index);
+// router.route('/design')
+//   .get(userController.new);
 
 router.route('/signup')
   .get(userController.new)
@@ -23,9 +23,19 @@ router.route('/logout')
   .get(userController.getLogout);
 
 
-router.route('/restricted')
+router.route('/design')
   .get(function(req, res, next) {
-    res.render('restricted', { title: 'Project 3' });
+    res.render('design', { title: 'Project 3' });
+  });
+
+  router.route('/job')
+  .get(function(req, res, next) {
+    res.render('job', { title: 'Project 3' });
+  });
+
+  router.route('/about')
+  .get(function(req, res, next) {
+    res.render('about', { title: 'Project 3' });
   });
 
 
