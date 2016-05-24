@@ -12,13 +12,10 @@ userController.index = function(req, res) {
   });
 };
 
-// make new Instructor and new Producer
 userController.new = function(req, res) {
-  // different views for instructors and producers
-  res.render('instructorSignup');
+  res.render('Signup');
 };
 
-// make create Instructor and create Producer
 userController.create = function(req, res) {
   var signUpStrategy = passport.authenticate('local-signup', {
     successRedirect: '/users/design',

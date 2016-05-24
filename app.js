@@ -26,6 +26,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(session({ secret: 'secret', resave: false, saveUninitialized: false})); // session secret
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'bower_components')));
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash());

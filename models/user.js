@@ -8,7 +8,6 @@ var userSchema = new mongoose.Schema({
   username   : String,
   password    : String,
   email       : String,
-  role        : String
 });
 
 userSchema.methods.validatePassword = function(password) {
