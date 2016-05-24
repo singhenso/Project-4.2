@@ -1,4 +1,4 @@
-#Project 4 : Paintify
+#Project 4 : Creative Station
 
 ##Trello Link
 
