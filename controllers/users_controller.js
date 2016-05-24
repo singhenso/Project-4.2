@@ -1,7 +1,7 @@
 var userController = {};
 var User = require('../models/user');
 var passport = require('passport');
-require('../config/passport')(passport)
+require('../config/passport')(passport);
 
 userController.index = function(req, res) {
    User.find({}, function(err, users) {
@@ -21,7 +21,7 @@ userController.new = function(req, res) {
 // make create Instructor and create Producer
 userController.create = function(req, res) {
   var signUpStrategy = passport.authenticate('local-signup', {
-    successRedirect: '/users/calendar',
+    successRedirect: '/users/design',
     failureRedirect: '/users/restricted',
     failureFlash: true
   });
@@ -33,13 +33,11 @@ userController.getLogin = function(request, response) {
   response.render('login.ejs', { message: request.flash('loginMessage') });
 };
 
-userController.getLogin2 = function(request, response) {
-  response.render('login2.ejs', { message: request.flash('loginMessage') });
-};
+
 
 userController.postLogin = function(request, response) {
   var loginProperty = passport.authenticate('local-login', {
-    successRedirect : '/users/calendar',
+    successRedirect : '/users/design',
     failureRedirect : '/users/signup',
     failureFlash : true
   });
