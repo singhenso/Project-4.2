@@ -1,48 +1,35 @@
-#Kellie Web Application 
-  
- #Team Mates
-  
- - Carlos Velasquez
- - Gagandeep Singh
- - Allie Liu
- - Ilya Sovet
- 
- ---
- 
- 
- ### Heroku Deployment
- 
- kellie-app.heroku.com
- 
- ### Trello Board
- 
- <a href="https://trello.com/b/zgZNVrMz/project-3">Trello Board</a>
- 
- ### GitHub Link
- 
- <a href="https://github.com/Schedulizer/kellie_app/">GitHub link </a>
- 
- ---
- 
- 
- ###Technology Used
- - MongoDB & Express
- - RESTful API
- - AJAX
- - Node.js
- - HTML5 & CSS5
- - JavaScript
- - FullCalendar
- - BootStrap
- - OAuth Authentication
- - Passport
- - Nodmailer
- 
- 
- 
- 
- Kellie app is an Application built for Kellie so she is able to communicate more effectivley with GA Instructors. Producers are able to sign up and login and be able to manipulate their FullCalendar that is viewable for instructors. Producers are then able to send emails to Instructors through the App using nodemailer.
- 
- The Kellie App uses MongoDB to store the database of Instructors and producers. It also uses Express to CRUD our Inustructor/Producer data. The information of users including username, password, email and role are located in `kellie-app.heroku.com/users/`
- 
- The Producers and Instructors are able to login through OAuth using passport. The Instructors do not have access to manipulate the data of the FullCalendar while the Producer
+#Project 4 : Paintify
+
+##Trello Link
+
+<A href="https://trello.com/b/zFyYOpsE/project-4"><h3>Trello</h3></a>
+<a href="https://calm-retreat-74821.herokuapp.com/"><h3>Heroku</h3></a>
+
+
+### Description
+
+Paintify is a showcase platform for visual artist which include painters from a variety of different genres and mediums. This website would use the MEAN Stack and allow users to signup and upload their pictures and be able to comment on other people's artwork. Users are able to view schools in America that have imformation about M.F.A, M.A, B.F.A, and B.A programs for learning art and also information about the instructors teaching.
+
+I was thinking about using Ruby on Rails but I have to do some research. 
+
+![alt text](screenshots/App2.png "My WireFrames")
+
+
+---
+
+#### Friday, May 20th (9 AM) - Deliverables Due
+
+- A Github repo with all instructors added as collaborators
+- A readme.md in your repo
+- A single paragraph description of what you want your project to be, and what technologies you plan to use
+- A Trello board (that all of the instructors have been added to)
+- User Stories written in the format "As a `<role>` I want `<feature>` so that `<reason>`"
+- User stories organized into lists, for example:
+ - Current (what you're currently working on)
+ - Sprint (what you hope to have finished in this sprint, i.e. your MVP)
+ - Backlog (your wishlist)
+- ERD uploaded to your repo and linked to in your readme.md
+- Wireframes uploaded to your repo and linked to in your readme.md
+
+
+![alt text](screenshots/App3.png "ERD Tables")
