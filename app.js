@@ -49,7 +49,7 @@ app.get('/', function(req, res, next) {
   res.render('index', { title: 'Project 3' });
 });
 app.use('/users', userRoutes);
-app.use('/design', designRoutes);
+app.use('/designs', designRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
