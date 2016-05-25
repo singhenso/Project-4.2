@@ -3,7 +3,6 @@ angular.module("myApp")
 
 function ArtworkController() {
 
-
-
+// $http.get('/design');
 
 }
