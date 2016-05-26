@@ -23,12 +23,11 @@
     </div>
   </div>
 </div>
+<table class="">
 
-
-    <% for(var i=0;i < designs.length; i++){ %>
-      <span class="col-md-4"><img class="image" src="<%= designs[i].image %>"></span>
+ <% for(var i=0;i < designs.length; i++){ %>
+      <span class="col-md-4"><img class="image" src="<%= designs[i].image %>"><br>name: <%= designs[i].name %><br>medium: <%= designs[i].medium %><br>location: <%= designs[i].location %></span>
    <% } %>
-
 
 
 </body>
