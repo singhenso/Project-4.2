@@ -6,14 +6,29 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/angular/angular.js"></script>
+  <script src="/javascripts/main.js"></script>
 </head>
 <body>
+<div id="wrap">
+  <div class="hero hero-jobs">
+  <div class="hero-inner">
+    <% include ./partials/header %>
+    <div class="full group">
+      <div class="hero-title">
+        <span class="pre-head">Creative Station Job Network</span>
+        <h1>Creative Station Designs</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Latest compiled and minified CSS -->
 
 <!-- Optional theme -->
 
 <!-- Latest compiled and minified JavaScript -->
-    <% include ./partials/header %>
 
   <div>
     <form action="/users/design" method="Post">
@@ -21,7 +36,7 @@
     Image: <input type="text" name="image"><br>
     Medium: <input type="text" name="medium"><br>
     Location: <input type="text" name="location"><br>
-    <button>Create artwork</button>
+    <button class="create">Create artwork</button>
 
 </form>
 </body>

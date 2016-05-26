@@ -24,10 +24,12 @@ designController.create = function(req, res) {
   design.medium = body.medium;
   design.location = body.location;
 
+
   design.save(function(err) {
     if (err) throw err;
     res.json(design);
-  });
+    successRedirect: '/'
+    });
 };
 
 designController.update = function(req, res) {};

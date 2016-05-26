@@ -39,7 +39,8 @@ router.route('/design')
   .get(function(req, res, next) {
     res.render('about', { title: 'Project 3' });
   });
-
+router.route('/:id')
+  .delete(userController.destroy);
 
 
 module.exports = router;

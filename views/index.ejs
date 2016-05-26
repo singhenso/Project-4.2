@@ -17,15 +17,14 @@
     </style>
 </head>
 <body>
-<div>
+      <div>
       <% include ./partials/header %>
-      {{2+2}}
-</div>
-  <h1><img src='/Images/cs.png' height="315" width="600"></h1>
+  <h1><img src='/Images/logo.png'></h1>
 
+</div>
       <% for(var i=0;i < designs.length; i++){ %>
+          <img class="image" src="<%= designs[i].image %>"><br>
           name: <%= designs[i].name %> <br>
-          image: <img class="image" src="<%= designs[i].image %>"><br>
           medium: <%= designs[i].medium %> <br>
           location: <%= designs[i].location %> <br>
        <% } %>

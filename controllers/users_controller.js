@@ -19,7 +19,7 @@ userController.new = function(req, res) {
 userController.create = function(req, res) {
   var signUpStrategy = passport.authenticate('local-signup', {
     successRedirect: '/users/design',
-    failureRedirect: '/users/restricted',
+    failureRedirect: '/',
     failureFlash: true
   });
 
@@ -52,7 +52,14 @@ userController.show = function(req, res) {};
 
 userController.edit = function(req, res) {};
 
-userController.destroy = function(req, res) {};
+userController.destroy = function(req, res) {
+  User.findOneAndRemove({_id: req.params.id}, function(err) {
+    if (err) {
+      throw err;
+    }
+    res.json({success: true, message: "user destroyed!"});
+  });
+};
 
 module.exports = userController;
 
