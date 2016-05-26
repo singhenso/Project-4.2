@@ -36,7 +36,14 @@ designController.show = function(req, res) {};
 
 designController.edit = function(req, res) {};
 
-designController.destroy = function(req, res) {};
+designController.destroy = function(req, res) {
+  Design.findOneAndRemove({_id: req.params.id}, function(err) {
+    if (err) {
+      throw err;
+    };
+    res.json({success: true, message: "design destroyed!"});
+  });
+};
 
 module.exports = designController;
 

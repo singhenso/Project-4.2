@@ -9,14 +9,8 @@ router.route('/')
   .get(designController.index)
   .post(designController.create);
 
-router.route('/designs')
-  .get(function(req, res, next) {
 
-  });
-
-
-router.route('/')
-  .get(designController.index)
-  .post(designController.create);
+router.route('/:id')
+  .delete(designController.destroy);
 
 module.exports = router;
