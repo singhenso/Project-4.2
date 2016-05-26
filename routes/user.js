@@ -3,6 +3,7 @@ var router = express.Router();
 var userController = require('../controllers/users_controller');
 var passport = require('passport');
 var bodyParser = require('body-parser');
+var designController = require('../controllers/design_controller');
 
 
 router.route('/')
@@ -26,7 +27,8 @@ router.route('/logout')
 router.route('/design')
   .get(function(req, res, next) {
     res.render('design', { title: 'Project 3' });
-  });
+  })
+  .post(designController.create)
 
   router.route('/job')
   .get(function(req, res, next) {

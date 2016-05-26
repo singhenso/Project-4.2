@@ -18,10 +18,14 @@
 </head>
 <body>
 <div>
-      {{2+2}}
       <% include ./partials/header %>
+      {{2+2}}
 </div>
   <h1><img src='/Images/cs.png' height="315" width="600"></h1>
+
+      <% for(var i=0;i < designs.length; i++){ %>
+          name: <%= designs[i].name %> <br>
+       <% } %>
 
 
 </body>

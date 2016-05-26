@@ -10,6 +10,7 @@ var passport      = require('passport');
 var db            = require('./config/db');
 var flash         = require('connect-flash');
 var app           = express();
+var Design        = require('./models/art');
 
 // Routes
 var userRoutes      = require('./routes/user');
@@ -46,7 +47,12 @@ app.use(passport.session());
 
 
 app.get('/', function(req, res, next) {
-  res.render('index', { title: 'Project 3' });
+  Design.find({}, function(err, designs) {
+    if (err) {
+      throw err;
+    }
+    res.render('index', { title: 'Project 4', designs: designs });
+  });
 });
 app.use('/users', userRoutes);
 app.use('/designs', designRoutes);
