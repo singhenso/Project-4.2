@@ -32,16 +32,16 @@ Git clone the Repo. Start NPM install and run MongoDB
 * CSS
 * Node.js
 * Angular
+* Bcrypt 
 * MongoDB
 * Express
-* JSend
-* Passport
-* Bcrypt 
+* Mongoose
 * Body-parser
 * Cookie-parser
-* Mongoose
 * Path
+* Passport
 * Bootstrap
+* JSend
 
 
 
