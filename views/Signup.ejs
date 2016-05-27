@@ -1,49 +1,62 @@
 <!DOCTYPE html>
 <html>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-      <link rel="stylesheet" type="css/text" href="csshake.css">
-      <link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
-
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <head>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sign Up page</title>
+  <title>Graphic Design</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="/angular/angular.js"></script>
+  <script src="/javascripts/main.js"></script>
 </head>
 <body>
-<div class="jumbotron">
-  <h1>Signup Here</h1>
+<div id="wrap">
+  <div class="hero hero-jobs">
+  <div class="hero-inner">
+    <% include ./partials/header %>
+      <h1><img src='/Images/logo.png'></h1>
 
-  <form action="/users/signup" method="post">
-    <div>
-    <label>Username:</label>
-    <input type="text" name="username"/><br/>
+    <div class="full group">
+      <div class="hero-title">
+      </div>
     </div>
-    <div>
-    <label>Password:</label>
-    <input type="password" name="password"/>
-    </div>
-    <div>
-    <label>email:</label>
-    <input type="email" name="email"/>
-    </div>
-    <div>
-    <input type="hidden" name="role" value=""/>
-    </div>
-    <div>
-    <input class="btn btn-primary btn-lg" type="submit" value="Submit"/>
-    </div>
-  </form>
   </div>
+</div>
+
+
+
+
+    <div class="jumbotron">
+  <h1>Graphic Designer Signup</h1>
+</div>
+
+
+
+<div id="wrapper">
+
+  <form name="login-form" class="login-form" action="/users/signup" method="post">
+
+    <div class="header">
+    <h1>Signup Form</h1>
+    <span>Fill out the form below to Sign-Up</span>
+    </div>
+
+    <div class="content">
+    <input name="username" type="text" class="input username" placeholder="Username" />
+    <div class="user-icon"></div>
+    <input name="password" type="password" class="input password" placeholder="Password" />
+    <div class="pass-icon"></div>
+    </div>
+
+    <div class="footer">
+    <input type="submit" name="submit" value="Login" class="button" />
+    </div>
+
+  </form>
+
+</div>
+
 
 
 </body>

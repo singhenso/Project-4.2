@@ -7,7 +7,6 @@ var bcrypt = require('bcrypt-nodejs');
 var userSchema = new mongoose.Schema({
   username   : String,
   password    : String,
-  email       : String,
 });
 
 userSchema.methods.validatePassword = function(password) {
