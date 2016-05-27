@@ -27,8 +27,7 @@ designController.create = function(req, res) {
 
   design.save(function(err) {
     if (err) throw err;
-    res.json(design);
-    successRedirect: '/'
+    res.redirect('/');
     });
 };
 
